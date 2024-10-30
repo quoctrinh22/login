@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Gome Pixel Rounded';
+    src: url('GomePixel-Rounded.eot');
+    src: url('GomePixel-Rounded.eot?#iefix') format('embedded-opentype'),
+        url('GomePixel-Rounded.woff2') format('woff2'),
+        url('GomePixel-Rounded.woff') format('woff'),
+        url('GomePixel-Rounded.ttf') format('truetype'),
+        url('GomePixel-Rounded.svg#GomePixel-Rounded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gome Pixel';
+    src: url('GomePixel-Regular.eot');
+    src: url('GomePixel-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GomePixel-Regular.woff2') format('woff2'),
+        url('GomePixel-Regular.woff') format('woff'),
+        url('GomePixel-Regular.ttf') format('truetype'),
+        url('GomePixel-Regular.svg#GomePixel-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

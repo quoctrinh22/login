@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pixelify Sans", serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #b9b9b9;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box {
+      position: relative;
+      width: 400px;
+      height: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //   background-color: #fff;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 100%;
+        filter: blur(1px);
+        z-index: -1;
+      }
+      &::before {
+        top: 0;
+        left: 0;
+        background: linear-gradient(#fff, #fff, #e3e3e3);
+      }
+      &::after {
+        top: 1;
+        right: -1px;
+        background: linear-gradient(#fff, #fff, #9d9d9d);
+      }
+      .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #eee;
+        z-index: -2;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -3;
+        }
+        &::before {
+          top: 0;
+          left: 124.4%;
+          width: 120%;
+          height: 240%;
+          background: linear-gradient(rgba(0, 0, 0, 0.075), transparent);
+          transform: skew(45deg);
+        }
+        &::after {
+          bottom: -100%;
+          left: 60.5%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(rgba(0, 0, 0, 0.1), transparent);
+          transform: skew(45deg);
+        }
+      }
+      .cover {
+        position: absolute;
+        top: 0;
+        left: -100px;
+        width: 100px;
+        height: 100px;
+        background-color: #b9b9b9;
+      }
+      .content {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#bcbcbc, #959494);
+        box-shadow: 5px 5px 5px #00000010, 15px 15px 15px #00000010,
+          20px 10px 20px #00000010, 50px 50px 80px #00000025,
+          inset 3px 3px 2px #fff;
+        z-index: -2;
+      }
+    }
+  }
+}
